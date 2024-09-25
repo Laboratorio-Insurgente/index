@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'GeoSlab703 MdCn BT';
+    src: url('fonts/GeometricSlab703BT-BoldCond.woff2') format('woff2'),
+        url('fonts/GeometricSlab703BT-BoldCond.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans';
+    src: url('fonts/SofiaSans-Bold.woff2') format('woff2'),
+        url('fonts/SofiaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo Narrow';
+    src: url('fonts/ArchivoNarrow-Regular.woff2') format('woff2'),
+        url('fonts/ArchivoNarrow-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.navbar {
+    height: var(--cs-nav-height);
+    color: #0000;
+    font-family: 'GeoSlab703', serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: #0D4925; 
+    font-family: 'GeoSlab703', serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #0D4925;
+    font-family: 'GeoSlab703', serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+/* Link color when hovered */
+.nav-link:hover {
+    color:  #ff0000;
+}
+/* Link color when visited */
+.nav-link:visited {
+    color:  #ff0000;
+}
+.row {
+    height: 50%;
+}
+
