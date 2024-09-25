@@ -27,16 +27,12 @@
 
 .navbar {
     height: var(--cs-nav-height);
-    color: #0000;
-    font-family: 'GeoSlab703', serif;
-    font-weight: 800;
-    text-transform: capitalize;
     z-index: 1000;
 }
 
 .navbar-brand {
     color: #0D4925; 
-    font-family: 'GeoSlab703', serif;
+    font-family: 'GeoSlab703 MdCn BT', serif;
     font-weight: 800;
     text-transform: capitalize;
     font-size: 1.5rem;
@@ -44,7 +40,7 @@
 
 .nav-link {
     color: #0D4925;
-    font-family: 'GeoSlab703', serif;
+    font-family: 'Sofia Sans', serif;
     font-weight: 800;
     text-transform: capitalize;
     font-size: 1.2rem;
