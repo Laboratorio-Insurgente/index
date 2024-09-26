@@ -130,7 +130,7 @@ section .title{
 }
 
 .nav-link {
-    color: #0D4925;
+    color: black;
     font-family: 'Sofia Sans', serif;
     font-weight: 800;
     text-transform: capitalize;
@@ -144,7 +144,7 @@ section .title{
 }
 /* Link color when visited */
 .nav-link:visited {
-    color: #0D4925;
+    color: black;
 }
 
 footer {
