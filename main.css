@@ -25,6 +25,118 @@
     font-display: swap;
 }
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', sans-serif;
+  }
+  section:first-child{
+    position: relative;
+    height:100px;
+  }
+  section .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top:-35.5px;
+    margin-left: -91.4px;
+    font-family: 'Sofia Sans', serif;
+    text-align: center;
+    letter-spacing: 10px;
+  }
+  .title h1,h2{
+    font-family:'Sofia Sans', serif; 
+    font-size:28px; 
+    font-weight:400; 
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .title h2{
+    font-size:20px;
+    font-weight:100;
+    letter-spacing: 5px;
+  }
+  .p-one{
+   background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://s-media-cache-ak0.pinimg.com/originals/27/05/74/2705741f272606db11ac1ae9938f2e93.jpg'); 
+  }
+
+  .parallax-inner{
+    position:relative;
+    min-height: 500px;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .parallax-inner > h2{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -20.5px;
+    width: 100%;
+    text-align: center;
+  }
+  .content-text p{
+    padding: 25px 50px 25px 50px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 24px;
+  }
+  .first-letter{
+    float: left;
+    font-weight: 400;
+    font-size: 84px;
+    line-height: 64px;
+    padding-top: 2px;
+    padding-right: 8px;
+    padding-left: 4px;
+  }
+  .line-break{
+    border-bottom: 1px solid #bf2d33;
+    width: 200px;
+    margin: 0 auto;
+  }
+  .red{
+    color: #5e5a58;
+  }
+  .darkgreen{
+    color:#0d2100;
+  }
+  .green{
+    color:#6b6837;
+  }
+  .skyblue{
+    color: #5c9cbf;
+  }
+  footer{
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  footer > p{
+    text-transform: capitalize;
+    width:460px;
+    margin:0 auto;
+    font-size: 27px;
+  }
+  
+  /* media queries */
+  @media screen and (max-width:500px){
+    .parallax-inner{
+      min-height: 350px;
+      background-size: cover;
+    }
+    footer{
+      padding: 10px;
+    }
+    footer > p{
+      width: 100%;
+      font-size: 24px;
+    }
+  }
+
 .navbar {
     height: var(--cs-nav-height);
     z-index: 1000;
