@@ -29,36 +29,36 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Arimo', sans-serif;
-  }
-  section:first-child{
+    font-family: 'Archivo Narrow', serif;
+}
+section:first-child{
     position: relative;
     height:100px;
-  }
-  section .title{
+}
+section .title{
     position: absolute;
     top: 50%;
-    left: 50%;
-    margin-top:-35.5px;
-    margin-left: -91.4px;
-    font-family: 'Sofia Sans', serif;
+    margin-top: -35.5px;
+    margin-bottom: -35px;
+    font-family: 'GeoSlab703 MdCn BT', serif;
     text-align: center;
     letter-spacing: 10px;
   }
+
   .title h1,h2{
     font-family:'Sofia Sans', serif; 
-    font-size:28px; 
-    font-weight:400; 
+    font-size: 3em; 
+    font-weight:300; 
     text-transform: uppercase;
     text-align: center;
   }
   .title h2{
-    font-size:20px;
+    font-size: 2em;
     font-weight:100;
     letter-spacing: 5px;
   }
   .p-one{
-   background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://s-media-cache-ak0.pinimg.com/originals/27/05/74/2705741f272606db11ac1ae9938f2e93.jpg'); 
+   background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/cabanos.webp'); 
   }
 
   .parallax-inner{
@@ -142,20 +142,14 @@
     z-index: 1000;
 }
 
-.navbar-brand {
-    color: #0D4925; 
-    font-family: 'GeoSlab703 MdCn BT', serif;
-    font-weight: 800;
-    text-transform: capitalize;
-    font-size: 1.5rem;
-}
-
 .nav-link {
     color: #0D4925;
     font-family: 'Sofia Sans', serif;
     font-weight: 800;
     text-transform: capitalize;
-    font-size: 1.2rem;
+    font-size: 1.2em;
+    padding: 1em;
+    margin-left: 1em;
 }
 /* Link color when hovered */
 .nav-link:hover {
