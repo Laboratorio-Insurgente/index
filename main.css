@@ -45,8 +45,8 @@ section .title{
     letter-spacing: 10px;
   }
 
-  .title h1,h2{
-    font-family:'Sofia Sans', serif; 
+  .title h1,{
+    font-family:'GeoSlab703 MdCn BT', serif; 
     font-size: 3em; 
     font-weight:300; 
     text-transform: uppercase;
@@ -153,13 +153,11 @@ section .title{
 }
 /* Link color when hovered */
 .nav-link:hover {
-    color:  #ff0000;
+    color:  #0D4925;
 }
 /* Link color when visited */
 .nav-link:visited {
-    color:  #ff0000;
+    color: #0D4925;
 }
-.row {
-    height: 50%;
-}
+
 
