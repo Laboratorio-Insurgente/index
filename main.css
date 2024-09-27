@@ -97,6 +97,7 @@ section .title{
     text-align: center;
   }
   .content-text p{
+    font-family: 'Archivo Narrow', serif;
     padding: 25px 50px 25px 50px;
     font-weight: 400;
     text-align: justify;
@@ -249,9 +250,13 @@ footer {
   font-size: 1.2em;
 }
 
+.pt-2{
+  font-family: 'Sofia Sans', serif;
+}
+
 footer p, footer a {
   color: white; /* Cor padrão igual à navbar */
-  font-family: 'Sofia Sans', serif;
+  Font-family: 'Archivo Narrow', serif;
   font-weight: 800;
   text-transform: capitalize;
 }
@@ -271,6 +276,7 @@ footer {
 .direitos {
   padding-top: 6em;
   font-weight: 100;
+  font-size: 0.8em;
   text-align: justify;
   padding-left: 1.5em;
 }
