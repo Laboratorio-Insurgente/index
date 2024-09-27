@@ -122,7 +122,7 @@ section .title{
 }
 
 .nav-link {
-    color: black;
+    color: #fff;
     font-family: 'Sofia Sans', serif;
     font-weight: 800;
     text-transform: capitalize;
@@ -132,13 +132,113 @@ section .title{
 }
 /* Link color when hovered */
 .nav-link:hover {
-    color:  #0D4925;
+    color: #ffd700;
 }
 /* Link color when visited */
 .nav-link:visited {
-    color: black;
+    color: #ffffbf;
 }
 
+/* Container da equipe */
+.team-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px; /* Espaço adicional antes do footer */
+  margin-top: 40px;
+}
+
+.team-member {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 20px;
+}
+
+.card {
+  width: 200px;
+  height: 350px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-front img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.card-back {
+  background-color: #bf2d33;
+  color: black;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;  /* Centraliza horizontalmente */
+  align-items: center;      /* Centraliza verticalmente */
+  text-align: center;       /* Centraliza texto em múltiplas linhas */
+  font-family: 'Archivo Narrow', serif;
+  font-size: 0.8em;
+  padding: 10px;            /* Adiciona espaço ao redor do texto */
+}
+
+.member-info {
+  max-width: 500px;
+  text-align: justify;
+}
+
+.member-info h3 {
+  Font-family: 'Sofia Sans', serif;
+  margin-bottom: 10px;
+  color:  black;
+}
+
+.member-info p {
+  Font-family: 'Archivo Narrow', serif;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.lattes-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:  rgba(13, 73, 37);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.lattes-btn:hover {
+  background-color: #ffd700;
+}
+
+/*Footer*/
 footer {
   height: calc(3 * var(--cs-nav-height));
   width: 100%;
@@ -146,17 +246,18 @@ footer {
   background-color: rgba(13, 73, 37, 0.5); 
   padding: 5px;
   text-align: center;
+  font-size: 1.2em;
 }
 
 footer p, footer a {
-  color: black; /* Cor padrão igual à navbar */
+  color: white; /* Cor padrão igual à navbar */
   font-family: 'Sofia Sans', serif;
   font-weight: 800;
   text-transform: capitalize;
 }
 
 footer a:hover {
-  color: #0D4925; /* Cor ao passar o mouse igual à navbar */
+  color: #ffd700; /* Cor ao passar o mouse igual à navbar */
 }
 
 footer .btn {
