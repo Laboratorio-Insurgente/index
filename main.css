@@ -30,6 +30,14 @@
     margin: 0;
     padding: 0;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 section:first-child{
     position: relative;
     height:100px;
@@ -108,23 +116,7 @@ section .title{
     width: 200px;
     margin: 0 auto;
   }
-  
-  /* media queries */
-  @media screen and (max-width:500px){
-    .parallax-inner{
-      min-height: 350px;
-      background-size: cover;
-    }
-    footer{
-      padding: 10px;
-    }
-    footer > p{
-      width: 100%;
-      font-size: 24px;
-    }
-  }
-
-.navbar {
+  .navbar {
     height: var(--cs-nav-height);
     z-index: 1000;
 }
@@ -148,9 +140,164 @@ section .title{
 }
 
 footer {
-  width: 100vw; /* Define a largura do footer como 100% da viewport */
-  position: relative; /* Garante que ele seja posicionado em relação ao fluxo normal da página */
-  left: 50%; /* Centraliza o footer em relação à viewport */
-  transform: translateX(-50%); /* Corrige o alinhamento para centralizar corretamente */
-  background-color: rgba(13, 73, 37, 0.5); /* Cor de fundo com 50% de transparência */
+  height: calc(3 * var(--cs-nav-height));
+  width: 100%;
+  position: relative;
+  background-color: rgba(13, 73, 37, 0.5); 
+  padding: 5px;
+  text-align: center;
 }
+
+footer p, footer a {
+  color: black; /* Cor padrão igual à navbar */
+  font-family: 'Sofia Sans', serif;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+footer a:hover {
+  color: #0D4925; /* Cor ao passar o mouse igual à navbar */
+}
+
+footer .btn {
+  margin-bottom: 20px;
+}
+
+footer {
+  overflow: hidden;
+}
+
+.direitos {
+  padding-top: 6em;
+  font-weight: 100;
+  text-align: justify;
+  padding-left: 1.5em;
+}
+
+  /* Media queries para telas pequenas */
+@media screen and (max-width: 768px) {
+  /* Ajuste da navbar */
+  .navbar {
+    height: auto;
+    padding: 10px;
+  }
+  
+  .navbar-toggler {
+    font-size: 1.2em;
+    padding: 5px;
+  }
+
+  .nav-link {
+    font-size: 0.9em;
+    padding: 0.5em;
+  }
+
+  /* Título principal */
+  .maintitle {
+    font-size: 2.5em; /* Diminui o tamanho da fonte do título principal */
+    padding-top: 0.5em;
+  }
+
+  /* Títulos dentro de parallax */
+  .parallax-inner > h2 {
+    font-size: 1.5em;
+    letter-spacing: 5px;
+  }
+
+  /* Conteúdo de texto */
+  .content-text p {
+    padding: 10px 20px;
+    font-size: 1em;
+    line-height: 20px;
+  }
+
+  .first-letter {
+    font-size: 48px; /* Diminui a primeira letra */
+    line-height: 40px;
+  }
+  
+  .line-break {
+    width: 150px; /* Ajusta a largura da linha separadora */
+  }
+
+  /* Footer */
+  footer {
+    padding: 5px;
+    padding-bottom: 80px;
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  /* Ajusta o formulário de inscrição da newsletter */
+  footer .row {
+    display: flex;
+    flex-direction: column; /* Coloca os itens em colunas */
+    align-items: center; /* Centraliza os itens no meio */
+  }
+
+  footer .col-auto, 
+  footer .col-md-5, 
+  footer .col-12 {
+    width: 100%; /* Faz os itens ocuparem toda a largura */
+    margin-bottom: 10px; /* Espaço entre os elementos */
+  }
+
+  footer .btn {
+    width: 100%; /* O botão ocupa toda a largura */
+    padding: 10px;
+    margin-bottom: 40px; /* Garante que o botão não encoste no fim da página */
+  }
+
+  footer p, footer a {
+    font-size: 14px;
+    margin-bottom: 10px; /* Garante que o texto não sobreponha outros elementos */
+  }
+
+  footer img {
+    max-width: 50px; /* Reduz o tamanho do ícone da licença */
+  }
+}
+
+/* Ajustes mais radicais para telas muito pequenas (máx. 500px) */
+@media screen and (max-width: 500px) {
+  .maintitle {
+    font-size: 2em;
+    padding-top: 0.2em;
+  }
+
+  .parallax-inner {
+    min-height: 200px; /* Reduz o tamanho da imagem parallax */
+  }
+
+  .parallax-inner > h2 {
+    font-size: 1.2em;
+    letter-spacing: 3px;
+  }
+
+  .content-text p {
+    font-size: 0.9em;
+  }
+
+  .first-letter {
+    font-size: 36px; /* Ainda menor em telas muito pequenas */
+  }
+
+  /* footer */
+  footer {
+    padding: 15px;
+    font-size: 0.8em;
+  }
+
+  footer p, footer a {
+    font-size: 12px;
+  }
+
+  footer img {
+    max-width: 40px;
+  }
+
+  footer .btn {
+    font-size: 0.9em;
+  }
+}
+
