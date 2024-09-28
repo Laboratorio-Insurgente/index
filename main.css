@@ -73,7 +73,7 @@ section .title{
     letter-spacing: 5px;
   }
 .p-one{
-  background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/cabanos.webp'); 
+  background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/cover.jpeg'); 
   margin-top: 6em;
   margin-bottom: 6em;
   }
@@ -111,12 +111,15 @@ section .title{
     padding-top: 2px;
     padding-right: 8px;
     padding-left: 4px;
+    color: #bf2d33;
   }
   .line-break{
     border-bottom: 1px solid #bf2d33;
     width: 200px;
     margin: 0 auto;
   }
+
+/*Navbar*/
   .navbar {
     height: var(--cs-nav-height);
     z-index: 1000;
