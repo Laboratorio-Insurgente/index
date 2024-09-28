@@ -143,15 +143,27 @@ section .title{
     color: #ffffbf;
 }
 
+.navbar-light .navbar-toggler {
+  background-color: transparent; /* Fundo transparente */
+  border: 1px solid white; /* Altera a borda para branca */
+}
+
+  .navbar-light .navbar-toggler:focus,
+  .navbar-light .navbar-toggler:active {
+    border-color: white; /* Muda a cor da borda para branca */
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='none' stroke='white' stroke-width='3'%3E%3Cline x1='4' y1='7' x2='26' y2='7'/%3E%3Cline x1='4' y1='15' x2='26' y2='15'/%3E%3Cline x1='4' y1='23' x2='26' y2='23'/%3E%3C/svg%3E");
+}
+
 /* Container da equipe */
 .team-container {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+  flex-direction: column; /* Força os cards a ficarem em coluna no mobile */
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px; /* Espaço adicional antes do footer */
-  margin-top: 40px;
+  flex-wrap: wrap; /* Garante que não fiquem esticados em telas pequenas */
 }
 
 .team-member {
@@ -171,7 +183,7 @@ section .title{
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.6s;
+  transition: transform 0.6s; 
   transform-style: preserve-3d;
   cursor: pointer;
 }
@@ -189,6 +201,8 @@ section .title{
   display: flex;
   justify-content: center;
   align-items: center;
+  top:0;
+  left:0;
 }
 
 .card-front img {
@@ -208,8 +222,11 @@ section .title{
   text-align: center;       /* Centraliza texto em múltiplas linhas */
   font-family: 'Archivo Narrow', serif;
   font-size: 0.8em;
-  padding: 10px;            /* Adiciona espaço ao redor do texto */
+  padding: 10px;   
+  box-sizing: border-box;
+  transform: rotateY(180deg);
 }
+
 
 .member-info {
   max-width: 500px;
@@ -293,6 +310,7 @@ footer {
   }
   
   .navbar-toggler {
+
     font-size: 1.2em;
     padding: 5px;
   }
@@ -329,6 +347,35 @@ footer {
   .line-break {
     width: 150px; /* Ajusta a largura da linha separadora */
   }
+
+  .team-container {
+    flex-direction: column;
+    gap: 15px; /* Diminui o espaço entre os membros da equipe */
+  }
+
+  .team-member {
+    flex-direction: column;
+    text-align: center; /* Centraliza o texto nos cards */
+  }
+
+  .card {
+    width: 100%; /* Faz o card ocupar toda a largura disponível */
+    max-width: 300px; /* Define um limite para não ficar muito largo */
+    margin-bottom: 20px; /* Espaço entre os cards */
+  }
+
+  .member-info {
+    max-width: 100%; /* Remove o limite de largura */
+    padding: 10px; /* Adiciona um espaço interno */
+  }
+
+.member-info {
+  padding: 15px; /* Adiciona mais espaçamento interno */
+}
+
+.lattes-btn {
+  padding: 8px 15px; /* Ajusta o tamanho do botão para caber melhor */
+}
 
   /* Footer */
   footer {
@@ -392,6 +439,45 @@ footer {
     font-size: 36px; /* Ainda menor em telas muito pequenas */
   }
 
+  .team-member {
+    width: 100%; /* O card ocupará toda a largura da tela */
+    max-width: 280px;
+    padding-top:4em;
+    padding-bottom: 2em;;
+  }
+
+  .card {
+    max-width: 100%; /* Garante que o card não ultrapasse os limites da tela */
+    max-width: 280px;
+    height: 350px;
+    padding-top: 15em;
+    padding-bottom: 15em;
+  }
+
+  .card-inner {
+    height: 100%; /* Garante que o conteúdo interno ocupe 100% da altura */  }
+
+  .card-front,
+  .card-back {
+    width: 100%; /* Ocupa 100% da largura */
+    height: 100%; /* Ocupa 100% da altura */
+    position: absolute; /* Garante que o `card-back` sobreponha completamente o `card-front` */
+    backface-visibility: hidden; /* Garante que a frente não apareça quando o card gira */
+    transform-style: preserve-3d; /* Mantém a transformação 3D */
+  }
+
+  .card-front img {
+    width: 100%; /* Ajusta a imagem para que não estique */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover;
+  }
+
+  .card-back {
+    font-size: 0.8em;
+    object-fit: cover;
+
+  }
+
   /* footer */
   footer {
     padding: 15px;
@@ -409,5 +495,13 @@ footer {
   footer .btn {
     font-size: 0.9em;
   }
-}
+  footer .row {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    footer .col-12 {
+      margin-bottom: 15px; /* Espaçamento entre os elementos no footer */
+    }
+  }
 
