@@ -71,7 +71,13 @@ section .title{
     font-size: 2em;
     font-weight:100;
     letter-spacing: 5px;
+    text-align: center;
   }
+
+h2 {
+  text-align: center;
+  padding: 2em 0 2em 0;
+}
 .p-one{
   background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/cover.jpeg'); 
   margin-top: 6em;
