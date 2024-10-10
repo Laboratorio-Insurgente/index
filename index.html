@@ -75,11 +75,21 @@
               </p>
             </div>
             <!-- Campo de e-mail -->
-            <div class="col-12 col-md-6 mb-3">
-              <div class="form-outline form-white">
-                <input type="email" id="form5Example2" class="form-control" placeholder="Seu e-mail" />
+            <form action="process_newsletter.php" method="POST">
+              <div class="row">
+                <div class="col-12 mb-2">
+                  <p class="pt-2"><strong>Assine nossa newsletter.</strong></p>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                  <div class="form-outline form-white">
+                    <input type="email" name="email" id="form5Example2" class="form-control" placeholder="Seu e-mail" required />
+                  </div>
+                </div>
+                <div class="col-12 col-md-3">
+                  <button type="submit" class="btn btn-outline-light w-30">Enviar</button>
+                </div>
               </div>
-            </div>
+            </form>
             <!-- Botão de envio -->
             <div class="col-12 col-md-3">
               <button type="submit" class="btn btn-outline-light w-30">Enviar</button> <!-- O botão ocupa 30% da largura -->
