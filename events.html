@@ -96,41 +96,37 @@
                   </div>
                 </div> -->
               </main>
-        <footer class="text-center text-white" style="background-color: rgba(13, 73, 37);">
-            <section class="p-4">
-            <form action="">
-                <div class="row">
-                <!-- Coluna completa para o título -->
-                <div class="col-12 mb-2">
-                    <p class="pt-2">
-                    <strong>Assine nossa newsletter.</strong>
-                    </p>
+              <footer class="text-center text-white" style="background-color: rgba(13, 73, 37);">
+                <section class="p-4">
+                      <!-- Campo de e-mail -->
+                      <form action="process_newsletter.php" method="POST">
+                        <div class="row">
+                          <div class="col-12 mb-2">
+                            <p class="pt-2"><strong>Assine nossa newsletter.</strong></p>
+                          </div>
+                          <div class="col-12 col-md-6 mb-3">
+                            <div class="form-outline form-white">
+                              <input type="email" name="email" id="form5Example2" class="form-control" placeholder="Seu e-mail" required />
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-3">
+                            <button type="submit" class="btn btn-outline-light w-30">Enviar</button>
+                          </div>
+                        </div>
+                      </form>
+                </section>
+                <section>
+                <div class="direitos">
+                  <p>Desenvolvido por <a class="text-white" href="https://github.com/CarlaMenegat">Carla Menegat</a> para Laboratório Insurgente, 2024.
+                    <a href="https://en.wikipedia.org/wiki/Creative_Commons_license">
+                      <img src="images/Cc_by-nc-nd_icon.svg.png" alt="Creative Commons License Icon" style="max-width:70px;">
+                    </a>
+                  </p>
                 </div>
-                <!-- Campo de e-mail -->
-                <div class="col-12 col-md-6 mb-3">
-                    <div class="form-outline form-white">
-                    <input type="email" id="form5Example2" class="form-control" placeholder="Seu e-mail" />
-                    </div>
-                </div>
-                <!-- Botão de envio -->
-                <div class="col-12 col-md-3">
-                    <button type="submit" class="btn btn-outline-light w-30">Enviar</button> <!-- O botão ocupa 30% da largura -->
-                </div>
-                </div>
-            </form>
-            </section>
-            <section>
-            <div class="direitos">
-            <p>Desenvolvido por <a class="text-white" href="https://github.com/CarlaMenegat">Carla Menegat</a> para Laboratório Insurgente, 2024.
-                <a href="https://en.wikipedia.org/wiki/Creative_Commons_license">
-                <img src="images/Cc_by-nc-nd_icon.svg.png" alt="Creative Commons License Icon" style="max-width:70px;">
-                </a>
-            </p>
-            </div>
-            </section>
-    </footer>
-        <!-- End of container -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
-    </body>
+                </section>
+              </footer>
+                <!-- End of container -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+            </body>
 </html>
